@@ -292,8 +292,8 @@ dialog::backdrop { background: #0b0b09d9; }
   padding: clamp(42px, 6vw, 90px) clamp(8px, 3vw, 38px);
   border-bottom: 1px solid var(--line);
 }
-.afterword-note { width: fit-content; max-width: 100%; margin-inline: auto; }
-.afterword h2 {
+.afterword-note { max-width: 39rem; margin-inline: auto; }
+.afterword-label {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -302,9 +302,18 @@ dialog::backdrop { background: #0b0b09d9; }
   font: 500 14px/1.6 var(--sans-cn);
   letter-spacing: .14em;
 }
-.afterword h2::before { content: ""; width: 24px; height: 1px; background: currentColor; }
-.afterword p { font: 400 clamp(18px, 1.7vw, 24px)/1.8 var(--serif-cn); color: #d3c9b5; }
-.afterword em {
+.afterword-label::before { content: ""; width: 24px; height: 1px; background: currentColor; }
+.afterword h2 { margin: 0 0 .8em; font: 600 clamp(24px, 2.8vw, 40px)/1.45 var(--serif-cn); }
+.afterword-note > p { font: 400 clamp(17px, 1.35vw, 19px)/1.95 var(--serif-cn); color: #dbd2bf; }
+.afterword-note > p + p { margin-top: .9em; }
+.afterword-quote { border-left: 2px solid var(--copper); padding-left: clamp(15px, 2vw, 28px); margin: 30px 0; }
+.afterword-quote blockquote { margin: 0; font: 500 clamp(19px, 1.7vw, 24px)/1.7 var(--serif-cn); color: #f0d4aa; }
+.afterword-quote [lang="fr"] { margin-top: .5em; font: italic 18px/1.55 var(--latin); color: #d2b897; }
+.afterword-quote figcaption { margin-top: .8em; font: 13px/1.75 var(--sans-cn); color: var(--muted); }
+.afterword-quote a { display: inline-block; text-decoration: underline; text-underline-offset: 3px; }
+.afterword-wish { border-top: 1px solid var(--line); padding-top: 1.4em; }
+.afterword-note > .afterword-wish { margin-top: 1.8em; }
+.afterword-wish em {
   display: block;
   margin-top: .15em;
   color: #efd6ac;

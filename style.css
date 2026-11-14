@@ -308,6 +308,7 @@ dialog::backdrop { background: #0b0b09d9; }
 .afterword-note > p + p { margin-top: .9em; }
 .afterword-quote { border-left: 2px solid var(--copper); padding-left: clamp(15px, 2vw, 28px); margin: 30px 0; }
 .afterword-quote blockquote { margin: 0; font: 500 clamp(19px, 1.7vw, 24px)/1.7 var(--serif-cn); color: #f0d4aa; }
+.afterword-quote blockquote p { text-wrap: balance; }
 .afterword-quote [lang="fr"] { margin-top: .5em; font: italic 18px/1.55 var(--latin); color: #d2b897; }
 .afterword-quote figcaption { margin-top: .8em; font: 13px/1.75 var(--sans-cn); color: var(--muted); }
 .afterword-quote a { display: inline-block; text-decoration: underline; text-underline-offset: 3px; }

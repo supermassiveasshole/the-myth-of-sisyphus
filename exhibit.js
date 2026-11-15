@@ -105,7 +105,7 @@ function showChapter(index) {
     paragraph.textContent = text;
     return paragraph;
   }));
-  select('#source-link').textContent = chapter.source + ' ↗';
+  select('#source-title').textContent = chapter.source;
   select('#source-link').href = chapter.url;
   select('#reader-count').textContent = '0' + (index + 1) + ' / 03';
   select('#prev-chapter').disabled = index === 0;

@@ -26,6 +26,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visibl
 .hero a:focus-visible { outline-color: var(--ink); }
 [hidden], .icon-library { display: none !important; }
 .icon { width: 18px; height: 18px; display: inline-block; flex: none; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; vertical-align: middle; }
+.inline-arrow { width: 1.1em; height: 1.1em; margin-inline-start: .32em; vertical-align: -.16em; }
 .vase { width: 32px; height: 39px; color: var(--copper); }
 .container { width: min(calc(100% - clamp(48px, 8.6vw, 152px)), 1552px); margin-inline: auto; }
 .skip { position: absolute; z-index: 10; top: 8px; left: 8px; padding: 12px 16px; background: var(--cream); color: var(--ink); transform: translateY(-160%); }
@@ -110,7 +111,6 @@ button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visibl
 .footer-brand { font: 600 16px var(--latin); letter-spacing: .1em; gap: 8px; color: #cfbfa4; }
 .footer-brand .vase { width: 21px; height: 26px; }
 .footer-brand span, .back-top { font: 12px var(--sans-cn); letter-spacing: .08em; color: var(--muted); }
-.back-top span { padding-left: 6px; }
 dialog { padding: 0; background: #24251f; color: var(--cream); border: 1px solid #87745a; box-shadow: 0 24px 100px #05040399; max-height: calc(100% - 48px); overscroll-behavior: contain; }
 dialog::backdrop { background: #0b0b09d9; }
 .reader-dialog { width: min(650px, calc(100% - 32px)); }
@@ -120,7 +120,7 @@ dialog::backdrop { background: #0b0b09d9; }
 .reader-body { padding: 24px clamp(20px, 4vw, 38px); }
 .reader-body h2, .plate-info h2 { font: 700 clamp(26px, 2.7vw, 40px)/1.4 var(--serif-cn); margin: 6px 0 13px; }
 .source-block { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 18px; color: var(--muted); font-size: 12px; line-height: 1.8; }
-.source-block span { margin-right: 12px; color: var(--copper); }
+.source-block > span { margin-right: 12px; color: var(--copper); }
 .source-block a { text-decoration: underline; text-underline-offset: 3px; }
 .reader-foot { border: 0; border-top: 1px solid var(--line); }
 .reader-foot button { display: flex; gap: 6px; align-items: center; font-size: 13px; min-height: 40px; }
@@ -255,7 +255,6 @@ dialog::backdrop { background: #0b0b09d9; }
 
 .hero-links { display: flex; align-items: baseline; gap: clamp(14px, 1.8vw, 28px); }
 .hero-secondary { font-size: 13px; font-weight: 600; letter-spacing: .05em; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
-.hero-secondary span { margin-left: 4px; }
 .plate-caption { column-gap: 12px; }
 .scene-controls { display: flex; gap: 8px; align-items: center; margin-left: auto; padding-right: 14px; border-right: 1px solid var(--line); }
 .scene-controls button { min-width: 27px; min-height: 27px; justify-content: center; padding: 0; color: var(--copper); }
